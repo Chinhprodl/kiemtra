@@ -94,6 +94,12 @@ nav {
     .menu.show {
         display: flex; 
     }
+    .menu.show {
+        display: flex; /* Hiển thị khi thêm lớp 'show' */
+        flex-direction: column; /* Cách sắp xếp trên mobile */
+        background-color: #8f080d; /* Nền màu cho menu */
+        width: 100%; /* Độ rộng toàn màn hình */
+      }
 }
 
 /* hình ảnh giới thiệu */
