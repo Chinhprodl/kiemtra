@@ -5,6 +5,7 @@ body {
     color: black;
     background-color: gray;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -31,76 +32,58 @@ header .logo img:last-child {
 }
 
 /* menu của trang chủ */
-
 nav {
-    background-color: #8f080d;
-    padding: 10px;
-    width: 50%;
+    background-color: #b30000; 
+    padding: 10px 15px;
+    position: relative;
     margin-left: 12em;
     margin-right: 10em;
 }
 
 .menu {
-    width: 50vw; 
-    display: flex;
-    justify-content: flex-start;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Căn các mục về bên trái */
 }
 
 .menu li {
-    margin-right: 20px;
+    margin: 0;
+    
 }
 
-.menu li a {
+.menu a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
+    color: #fff; 
+    padding: 10px 15px;
+    display: block;
 }
-
-.menu li a:hover {
-    background-color: #dc460f;
-    border-radius: 5px;
+.menu a:hover {
+    background-color: #e63946; 
 }
-
 
 .menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    font-size: 20px;
+    font-size: 24px;
+    color: #fff;
     cursor: pointer;
+    user-select: none;
 }
-
 
 @media (max-width: 768px) {
     .menu {
         display: none; 
         flex-direction: column; 
-        background-color: #8f080d;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .menu li {
-        margin: 5px 0;
-    }
-
-    .menu-toggle {
-        display: block; 
     }
 
     .menu.show {
         display: flex; 
     }
-    .menu.show {
-        display: flex; /* Hiển thị khi thêm lớp 'show' */
-        flex-direction: column; /* Cách sắp xếp trên mobile */
-        background-color: #8f080d; /* Nền màu cho menu */
-        width: 100%; /* Độ rộng toàn màn hình */
-      }
+
+    .menu-toggle {
+        display: block; 
+    }
 }
 
 /* hình ảnh giới thiệu */

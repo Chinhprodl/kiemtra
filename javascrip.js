@@ -1,16 +1,8 @@
 // Bắt sự kiện nhấn nút menu
-document.addEventListener('DOMContentLoaded', function () {
-  const menuToggle = document.querySelector('.menu-toggle');
+function toggleMenu() {
   const menu = document.querySelector('.menu');
-
-  if (menuToggle && menu) {
-      menuToggle.addEventListener('click', function () {
-          menu.classList.toggle('show'); // Toggle class 'show' khi nhấn nút
-      });
-  } else {
-      console.error('Không tìm thấy menu toggle hoặc danh sách menu.');
-  }
-});
+  menu.classList.toggle('show');
+}
 
 
 
